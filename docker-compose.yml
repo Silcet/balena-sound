@@ -70,3 +70,9 @@ services:
     network_mode: host
     ports:
       - 49494:49494
+
+  # Other services
+  miflora-mqtt-daemon:
+    build: ./other/miflora-mqtt-daemon
+    network_mode: host
+    restart: on-failure
